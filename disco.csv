@@ -1,5 +1,125 @@
-experience, 300
-consulting, 45
-data-data analysis-data, 200
-data-data, 45
-technology, 100
+﻿csv_value,count_bc
+Consulting-Program Management-requirement,16
+Consulting-Domain Expertise-financial,14
+Consulting-Domain Expertise-business,13
+Consulting-Domain Expertise-program,12
+Consulting-Support Services-contract,12
+Consulting-Program Management-support,9
+Consulting-Security/Compliance -policy,5
+Consulting-Domain Expertise-intelligence,5
+Consulting-Advisory Services-operation,5
+Consulting-Program Management-procedure,4
+Technology-Transformation-technology,4
+Consulting-Support Services-tax,4
+Consulting-Program Management-budget,4
+Consulting-Program Management-management,3
+Experience-Brand Experience-design,29
+Consulting-Brand Experience-marketing,25
+Experience-Digital Strategy-content,24
+Consulting-Program Management-manage,16
+Experience-Brand Experience-brand,12
+Consulting-Marketing-social,10
+Consulting-Digital Strategy-strategy,10
+Consulting-Program Management-management,9
+Consulting-Marketing-theme,8
+Consulting-Marketing-write,8
+Consulting-Marketing-print,7
+Consulting-Program Management-perform,7
+Consulting-Marketing-communication,6
+Consulting-Brand Experience-creative,6
+Consulting-Support Services-business,6
+Consulting-Security/Compliance -compliance,6
+Consulting-Program Management-account,6
+Consulting-Program Management-edit,5
+Consulting-Digital Strategy-technology,4
+Consulting-Program Management-concept,4
+Consulting-User Experience-packaging,4
+Consulting-Advisory Services-research,4
+Consulting-Analytics -analysis,4
+Consulting-Digital Strategy-strategic,4
+Consulting-Security/Compliance -requirement,4
+Consulting-Program Management-process,4
+Consulting-Domain Expertise-editorial,3
+Consulting-Security/Compliance -legal,5
+Consulting-Support Services-accounting,5
+Consulting-Security/Compliance -congressional,4
+Consulting-Program Management-administrative,3
+Data-Data Science-data,18
+Data-Analytics -analysis,6
+Data-Predicting Modeling-model,4
+Data-Analytics -report,4
+Data-Predicting Modeling-user,4
+Data-Predicting Modeling-model,3
+Experience-Support Services-proposal,4
+Experience-Domain Expertise-staff,4
+Experience-Domain Expertise-military,4
+Experience-Security/Compliance -legislative,4
+Experience-Brand Experience-design,4
+Experience-Support Services-solicitation,3
+Experience-Domain Expertise-talent,3
+Experience-Domain Expertise-award,3
+Experience-Program Management-project,31
+Experience-Marketing-campaign,12
+Experience-Marketing-market,8
+Experience-Marketing-video,8
+Experience-Support Services-contract,7
+Experience-Program Management-effort,7
+Experience-Support Services-sale,6
+Experience-User Experience-user,6
+Experience-Program Management-ensure,6
+Experience-Marketing-production,5
+Experience-Marketing-ad,5
+Experience-Marketing-publication,5
+Experience-Domain Expertise-team,5
+Experience-User Experience-usability,5
+Experience-Digital Strategy-email,5
+Experience-Program Management-program,5
+Experience-Marketing-graphic,4
+Experience-Marketing-advertisement,4
+Experience-Marketing-blog,4
+Experience-Brand Experience-logo,4
+Experience-Marketing-create,4
+Experience-Brand Experience-story,4
+Experience-Domain Expertise-technical,4
+Experience-Brand Experience-motion,3
+Experience-Brand Experience-style,3
+Experience-Brand Experience-identity,3
+Experience-Brand Experience-photo,3
+Experience-Digital Strategy-television,3
+Experience-Digital Strategy-mobile,3
+Technology-Domain Expertise-system,24
+Technology-Program Management-test,16
+Technology-Security/Compliance -security,13
+Technology-Digital Strategy-application,10
+Technology-Data Management-information,7
+Technology-Software Development-software,7
+Technology-Security/Compliance -network,7
+Technology-Security/Compliance -server,7
+Technology-Systems Engineering-technical,5
+Technology-User Experience-portal,5
+Technology-Digital Strategy-net,5
+Technology-User Experience-product,4
+Technology-Systems Engineering-computer,4
+Technology-Devops-development,4
+Technology-Data Science-database,4
+Technology-Marketing-medium,20
+Technology-Devops-development,14
+Technology-Digital Strategy-web,12
+Technology-Data Science-data,8
+Technology-Web Development -browser,7
+Technology-Digital Strategy-website,7
+Technology-User Experience-develop,6
+Technology-Program Management-module,5
+Technology-Data Management-server,4
+Technology-Digital Strategy-online,4
+Technology-Domain Expertise-prototype,4
+Technology-Program Management-product,3
+Technology-Software Development-developer,3
+Technology-Software Development-software,3
+Technology-Domain Expertise-script,4
+Technology-Data Management-configuration,4
+Technology-Data Science-code,4
+Technology-Systems Engineering-engineering,3
+Technology-Mixed Reality-hardware,3
+,
+,
