@@ -9,11 +9,13 @@ var b = {
 
 // Mapping of step names to colors.
 var colors = {
-  "Consulting": "#454F55",
-  "Data": "#3A8E94",
-  "data analysis": "#3A8E94",
-  "Technology": "#72AC75",
-  "Experience": "#EAD75D",
+  "root": ["#FFF"],
+  "Consulting": ["#454F55", "#6a7276", "#8f9599"],
+  "Data": ["#3A8E94",  "#61a4a9", "#88bbbe"],
+  "data analysis": ["#3A8E94", "#3A8E94", "#3A8E94"],
+  "Technology": ["#72AC75", "#8ebc90", "#aacdac"],
+  "Experience": ["#EAD75D", "#eedf7d",  "#f2e79d"]
+
 };
 
 // Total size of all segments; we set this later, after loading the data.
@@ -74,7 +76,9 @@ function createVisualization(json) {
       .attr("display", function(d) { return d.depth ? null : "none"; })
       .attr("d", arc)
       .attr("fill-rule", "evenodd")
-      .style("fill", function(d) { return colors[d.data.name]; })
+      .style("fill", function(d) {
+          console.log(d.data)
+          return colors[d.data.parent][d.data.level]; })
       .style("opacity", 1)
       .on("mouseover", mouseover);
 
@@ -181,7 +185,7 @@ function updateBreadcrumbs(nodeArray, percentageString) {
 
   entering.append("svg:polygon")
       .attr("points", breadcrumbPoints)
-      .style("fill", function(d) { return colors[d.data.name]; });
+      .style("fill", function(d) { return colors[d.data.parent][d.data.level]; });
 
   entering.append("svg:text")
       .attr("x", (b.w + b.t) / 2)
@@ -256,14 +260,17 @@ function toggleLegend() {
 // root to leaf, separated by hyphens. The second column is a count of how
 // often that sequence occurred.
 function buildHierarchy(csv) {
-  var root = {"name": "root", "children": []};
+  var root = {"name": "root", "parent": "root", "level": 0, "children": []};
   for (var i = 0; i < csv.length; i++) {
+
+    var level = 0;
     var sequence = csv[i][0];
     var size = +csv[i][1];
+
     if (isNaN(size)) { // e.g. if this is a header row
       continue;
     }
-    var parts = sequence.split("-");
+    var parts = sequence.split("-") //.map((m, i) => ([m, i]));
     var currentNode = root;
     for (var j = 0; j < parts.length; j++) {
       var children = currentNode["children"];
@@ -273,7 +280,7 @@ function buildHierarchy(csv) {
    // Not yet at the end of the sequence; move down the tree.
  	var foundChild = false;
  	for (var k = 0; k < children.length; k++) {
- 	  if (children[k]["name"] == nodeName) {
+ 	  if (children[k]["name"] === nodeName) {
  	    childNode = children[k];
  	    foundChild = true;
  	    break;
@@ -281,16 +288,22 @@ function buildHierarchy(csv) {
  	}
   // If we don't already have a child node for this branch, create it.
  	if (!foundChild) {
- 	  childNode = {"name": nodeName, "children": []};
+ 	  childNode = {"name": nodeName, "level": 1, "children": []};
  	  children.push(childNode);
  	}
  	currentNode = childNode;
       } else {
  	// Reached the end of the sequence; create a leaf node.
- 	childNode = {"name": nodeName, "size": size};
+ 	childNode = {"name": nodeName, "level": 2, "size": size};
  	children.push(childNode);
       }
     }
   }
+
+  // ha, ha, hack.
+  root.children.map(p => p.level = 0);
+  root.children.map(c => c.parent = c.name);
+  root.children.map(c => c.children.map(cp => cp.parent = c.parent));
+  root.children.map(c => c.children.map(cp => cp.children.map(cpp => cpp.parent = c.parent)));
   return root;
 };
