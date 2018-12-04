@@ -76,3 +76,20 @@ body {
     margin-top: 20px;
 }
 
+body {
+  margin: 40px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 700px 100px 500px;
+  grid-gap: 10px;
+
+}
+
+.box {
+
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
