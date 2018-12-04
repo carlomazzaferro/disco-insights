@@ -12,7 +12,6 @@ var colors = {
   "root": ["#FFF"],
   "Consulting": ["#454F55", "#6a7276", "#8f9599"],
   "Data": ["#3A8E94",  "#61a4a9", "#88bbbe"],
-  "data analysis": ["#3A8E94", "#3A8E94", "#3A8E94"],
   "Technology": ["#72AC75", "#8ebc90", "#aacdac"],
   "Experience": ["#EAD75D", "#eedf7d",  "#f2e79d"]
 
@@ -217,7 +216,7 @@ function drawLegend() {
 
   // Dimensions of legend item: width, height, spacing, radius of rounded rect.
   var li = {
-    w: 75, h: 30, s: 3, r: 3
+    w: 85, h: 30, s: 3, r: 3
   };
 
   var legend = d3.select("#legend").append("svg:svg")
@@ -236,7 +235,7 @@ function drawLegend() {
       .attr("ry", li.r)
       .attr("width", li.w)
       .attr("height", li.h)
-      .style("fill", function(d) { return d.value; });
+      .style("fill", function(d) { return d.value[0]; });
 
   g.append("svg:text")
       .attr("x", li.w / 2)
