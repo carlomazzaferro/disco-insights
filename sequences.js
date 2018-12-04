@@ -4,14 +4,13 @@ var radius = Math.min(width, height) / 2;
 
 // Breadcrumb dimensions: width, height, spacing, width of tip/tail.
 var b = {
-  w: 75, h: 30, s: 3, t: 10
+  w: 150, h: 30, s: 3, t: 10
 };
 
 // Mapping of step names to colors.
 var colors = {
   "Consulting": "#454F55",
   "Data": "#3A8E94",
-  "data analysis": "#3A8E94",
   "Technology": "#72AC75",
   "Experience": "#EAD75D",
 };
