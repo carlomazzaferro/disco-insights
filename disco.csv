@@ -14,19 +14,19 @@ Consulting-Support Services-tax,4
 Consulting-Program Management-budget,4
 Consulting-Program Management-management,3
 Experience-Brand Experience-design,29
-Consulting-Brand Experience-marketing,25
+Experience-Brand Experience-marketing,25
 Experience-Digital Strategy-content,24
 Consulting-Program Management-manage,16
 Experience-Brand Experience-brand,12
-Consulting-Marketing-social,10
+Experience-Marketing-social,10
 Consulting-Digital Strategy-strategy,10
 Consulting-Program Management-management,9
-Consulting-Marketing-theme,8
-Consulting-Marketing-write,8
+Experience-Marketing-theme,8
+Experience-Marketing-write,8
 Consulting-Marketing-print,7
 Consulting-Program Management-perform,7
-Consulting-Marketing-communication,6
-Consulting-Brand Experience-creative,6
+Experience-Marketing-communication,6
+Experience-Brand Experience-creative,6
 Consulting-Support Services-business,6
 Consulting-Security/Compliance -compliance,6
 Consulting-Program Management-account,6
@@ -102,7 +102,7 @@ Technology-User Experience-product,4
 Technology-Systems Engineering-computer,4
 Technology-Devops-development,4
 Technology-Data Science-database,4
-Technology-Marketing-medium,20
+Experience-Marketing-medium,20
 Technology-Devops-development,14
 Technology-Digital Strategy-web,12
 Technology-Data Science-data,8
